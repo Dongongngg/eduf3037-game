@@ -11,13 +11,21 @@ function App() {
   const [answerList, setAnswerList] = useState([]);
   const [round, setRound] = useState(1);
   const [selection, setSelection] = useState(data[1]);
+  const [loadFlag, setLoadFlag] = useState(false);
   const [endingFlag, setEndingFlag] = useState(false);
-
+  //scroll to location
+  const scrollTo = (props) => {
+    document.getElementById(props).scrollIntoView({ behavior: "smooth" });
+  };
+  //handle each round and get answer from selection area
   const handleRound = (answer) => {
     setRound(round + 1);
     setAnswerList([...answerList, answer]);
+    scrollTo("top");
+    setLoadFlag(true);
   };
 
+  //when round reaches 6, redirect to ending
   useEffect(() => {
     if (round <= Object.keys(data).length) {
       setSelection(data[round]);
@@ -26,13 +34,13 @@ function App() {
     }
   }, [round]);
 
-  useEffect(() => {
-    if (endingFlag) {
-    }
-  }, [endingFlag]);
+  // useEffect(() => {
+  //   if (endingFlag) {
+  //   }
+  // }, [endingFlag]);
 
   return (
-    <div className="app">
+    <div className="app" id="top">
       <header className="app-header">
         <div className="last-choices-box">
           <h3>last choices:</h3>
@@ -49,7 +57,7 @@ function App() {
         )}
       </header>
       <footer className="app-bginfo">
-        <Bginfo round={round} />
+        <Bginfo round={round} loadFlag={loadFlag} />
       </footer>
       <main className="app-selection">
         <Selections selection={selection} handleRound={handleRound} />

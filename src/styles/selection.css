@@ -27,8 +27,9 @@
 
 .selection-box .answer {
   cursor: pointer;
-  width: 5rem;
-  height: 5rem;
+  border: 1px solid black;
+  width: 10rem;
+  height: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -38,13 +39,13 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-transition: all 0.1s;
-  transition: all 0.1s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 .selection-box .answer:hover {
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
 }
 
 .selection-box .answer h1 {
@@ -67,8 +68,8 @@
     padding: 1rem;
   }
   .selection-box .answer {
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 7rem;
+    height: 1rem;
   }
 }
 /*# sourceMappingURL=selection.css.map */
