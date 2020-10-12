@@ -1,0 +1,36 @@
+.app {
+  height: 100%;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.app-header {
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+}
+
+.app-main {
+  height: calc(80vh - 6px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  .selection-box {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+  }
+}
+
+.app-footer {
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+}
