@@ -42,9 +42,11 @@ function App() {
             </h2>
           ))}
         </div>
-        <h1 className="round">
-          {round}/{Object.keys(data).length}
-        </h1>
+        {round >= 6 ? (
+          <h1 className="round">Done</h1>
+        ) : (
+          <h1 className="round">{round + "/" + Object.keys(data).length}</h1>
+        )}
       </header>
       <footer className="app-bginfo">
         <Bginfo round={round} />

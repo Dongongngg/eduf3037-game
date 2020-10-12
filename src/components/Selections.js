@@ -7,11 +7,10 @@ export default function Selections(props) {
   return (
     <>
       <div className="selection-box">
-        <div className="title">
-          <h1>{selection[0].title}</h1>
-        </div>
         <div className="img">{selection[0].img}</div>
-        <div className="description">{selection[0].description}</div>
+        <div className="description">
+          <p>{selection[0].description}</p>
+        </div>
         <div
           className="answer"
           onClick={() => handleRound(selection[0].answer)}
@@ -20,11 +19,10 @@ export default function Selections(props) {
         </div>
       </div>
       <div className="selection-box">
-        <div className="title">
-          <h1>{selection[1].title}</h1>
-        </div>
         <div className="img">{selection[1].img}</div>
-        <div className="description">{selection[1].description}</div>
+        <div className="description">
+          <p>{selection[1].description}</p>
+        </div>
         <div
           className="answer"
           onClick={() => handleRound(selection[1].answer)}

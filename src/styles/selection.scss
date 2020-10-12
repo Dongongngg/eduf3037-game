@@ -7,6 +7,7 @@
   justify-content: center;
   align-items: center;
   border: 1px solid black;
+
   .title,
   .description,
   .answer {
@@ -14,20 +15,40 @@
     padding: 1rem;
   }
   .answer {
+    cursor: pointer;
     width: 5rem;
     height: 5rem;
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all 0.1s;
+    &:hover {
+      transform: scale(1.5);
+    }
+    h1 {
+      font-size: calc(20px + 1vw);
+    }
+  }
+
+  .description {
+    p {
+      font-size: calc(12px + 1vw);
+    }
   }
 }
 @media screen and (max-width: 760px) {
   .selection-box {
     width: 100%;
     height: calc(50vh - 3px);
+    .title,
+    .description,
+    .answer {
+      margin: 1rem;
+      padding: 1rem;
+    }
+    .answer {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
   }
-}
-
-.answer {
-  cursor: pointer;
 }

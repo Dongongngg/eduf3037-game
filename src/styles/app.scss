@@ -8,7 +8,6 @@ $height-bginfo: 50vh;
 $height-selection: calc(100vh - #{$height-bginfo} - #{$height-header} - 6px);
 
 .app-header {
-  position: absolute;
   height: $height-header;
   display: flex;
   justify-content: center;
@@ -17,13 +16,27 @@ $height-selection: calc(100vh - #{$height-bginfo} - #{$height-header} - 6px);
   position: relative;
   .last-choices-box {
     position: absolute;
-    left: 0;
+    left: 1rem;
     display: flex;
     align-items: center;
     .choice {
       margin-left: 1rem;
       margin-right: 1rem;
-      display: inline;
+    }
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .app-header {
+    .last-choices-box {
+      .choice {
+        margin-left: 0.25rem;
+        margin-right: 0.25rem;
+      }
+    }
+    .round {
+      position: absolute;
+      right: 1rem;
     }
   }
 }

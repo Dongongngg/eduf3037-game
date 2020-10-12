@@ -4,7 +4,6 @@
 }
 
 .app-header {
-  position: absolute;
   height: 5vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -21,7 +20,7 @@
 
 .app-header .last-choices-box {
   position: absolute;
-  left: 0;
+  left: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -33,7 +32,17 @@
 .app-header .last-choices-box .choice {
   margin-left: 1rem;
   margin-right: 1rem;
-  display: inline;
+}
+
+@media screen and (max-width: 760px) {
+  .app-header .last-choices-box .choice {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+  }
+  .app-header .round {
+    position: absolute;
+    right: 1rem;
+  }
 }
 
 .app-selection {

@@ -26,6 +26,7 @@
 }
 
 .selection-box .answer {
+  cursor: pointer;
   width: 5rem;
   height: 5rem;
   display: -webkit-box;
@@ -37,6 +38,21 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+}
+
+.selection-box .answer:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.selection-box .answer h1 {
+  font-size: calc(20px + 1vw);
+}
+
+.selection-box .description p {
+  font-size: calc(12px + 1vw);
 }
 
 @media screen and (max-width: 760px) {
@@ -44,9 +60,15 @@
     width: 100%;
     height: calc(50vh - 3px);
   }
-}
-
-.answer {
-  cursor: pointer;
+  .selection-box .title,
+  .selection-box .description,
+  .selection-box .answer {
+    margin: 1rem;
+    padding: 1rem;
+  }
+  .selection-box .answer {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
 }
 /*# sourceMappingURL=selection.css.map */
