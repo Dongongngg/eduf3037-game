@@ -21,6 +21,12 @@
     justify-content: center;
   }
 }
+@media screen and (max-width: 760px) {
+  .selection-box {
+    width: 100%;
+    height: calc(50vh - 3px);
+  }
+}
 
 .answer {
   cursor: pointer;

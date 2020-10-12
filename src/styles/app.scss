@@ -4,7 +4,7 @@
 }
 //height
 $height-header: 5vh;
-$height-bginfo: 45vh;
+$height-bginfo: 50vh;
 $height-selection: calc(100vh - #{$height-bginfo} - #{$height-header} - 6px);
 
 .app-header {
@@ -36,10 +36,23 @@ $height-selection: calc(100vh - #{$height-bginfo} - #{$height-header} - 6px);
   border: 1px solid black;
 }
 
+@media screen and (max-width: 760px) {
+  .app-selection {
+    flex-direction: column;
+    height: auto;
+  }
+}
+
 .app-bginfo {
   height: $height-bginfo;
   display: flex;
   justify-content: center;
   align-items: center;
   border: 1px solid black;
+}
+
+@media screen and (max-width: 760px) {
+  .app-bginfo {
+    height: calc(100vh - #{$height-header} - 4px);
+  }
 }

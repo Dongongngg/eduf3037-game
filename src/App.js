@@ -46,12 +46,12 @@ function App() {
           {round}/{Object.keys(data).length}
         </h1>
       </header>
-      <main className="app-selection">
-        <Selections selection={selection} handleRound={handleRound} />
-      </main>
       <footer className="app-bginfo">
         <Bginfo round={round} />
       </footer>
+      <main className="app-selection">
+        <Selections selection={selection} handleRound={handleRound} />
+      </main>
     </div>
   );
 }
