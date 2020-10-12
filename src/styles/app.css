@@ -4,7 +4,8 @@
 }
 
 .app-header {
-  height: 10vh;
+  position: absolute;
+  height: 5vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -15,39 +16,42 @@
       -ms-flex-align: center;
           align-items: center;
   border: 1px solid black;
+  position: relative;
 }
 
-.app-main {
-  height: calc(80vh - 6px);
+.app-header .last-choices-box {
+  position: absolute;
+  left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.app-header .last-choices-box .choice {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  display: inline;
+}
+
+.app-selection {
+  height: calc(100vh - 45vh - 5vh - 6px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   border: 1px solid black;
 }
 
-.app-main .selection-box {
-  height: 100%;
-  width: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border: 1px solid black;
-}
-
-.app-footer {
-  height: 10vh;
+.app-bginfo {
+  height: 45vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

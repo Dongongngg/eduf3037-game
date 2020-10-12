@@ -1,34 +1,57 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from "react";
 //components
 import Selections from "./components/Selections";
+import Bginfo from "./components/Bginfo";
 //styles
-import "./styles/app.css"
+import "./styles/app.css";
 //data
-import data from "./data.json"
+import data from "./round.json";
 
 function App() {
-  const [selectionLists, setSelectionLists] = useState(data.selections)
-  const [selection, setSelection] = useState({})
-  const [node, setNode] = useState(1)
+  const [answerList, setAnswerList] = useState([]);
+  const [round, setRound] = useState(1);
+  const [selection, setSelection] = useState(data[1]);
+  const [endingFlag, setEndingFlag] = useState(false);
 
-const handleNode=()=>{
-  setNode(node+1);
-}
+  const handleRound = (answer) => {
+    setRound(round + 1);
+    setAnswerList([...answerList, answer]);
+  };
+
+  useEffect(() => {
+    if (round <= Object.keys(data).length) {
+      setSelection(data[round]);
+    } else {
+      setEndingFlag(true);
+    }
+  }, [round]);
+
+  useEffect(() => {
+    if (endingFlag) {
+    }
+  }, [endingFlag]);
 
   return (
     <div className="app">
       <header className="app-header">
-        <h1>Which one will you choose?</h1>
+        <div className="last-choices-box">
+          <h3>last choices:</h3>
+          {answerList.map((e, i) => (
+            <h2 key={i} className="choice">
+              {answerList[i]}
+            </h2>
+          ))}
+        </div>
+        <h1 className="round">
+          {round}/{Object.keys(data).length}
+        </h1>
       </header>
-      <main className="app-main">
-        <div className="selection-box">
-          <Selections selection={selection}/>
-        </div>
-        <div className="selection-box">
-          <Selections selection={selection}/>
-        </div>
+      <main className="app-selection">
+        <Selections selection={selection} handleRound={handleRound} />
       </main>
-      <footer className="app-footer"></footer>
+      <footer className="app-bginfo">
+        <Bginfo round={round} />
+      </footer>
     </div>
   );
 }

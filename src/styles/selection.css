@@ -1,1 +1,45 @@
-/* No CSS *//*# sourceMappingURL=selection.css.map */
+.selection-box {
+  height: 100%;
+  width: 50%;
+  background-color: #bdbdbd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid black;
+}
+
+.selection-box .title,
+.selection-box .description,
+.selection-box .answer {
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.selection-box .answer {
+  width: 5rem;
+  height: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.answer {
+  cursor: pointer;
+}
+/*# sourceMappingURL=selection.css.map */

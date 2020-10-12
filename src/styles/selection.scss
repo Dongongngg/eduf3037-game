@@ -1,1 +1,27 @@
-//sdsd
+.selection-box {
+  height: 100%;
+  width: 50%;
+  background-color: rgb(189, 189, 189);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  .title,
+  .description,
+  .answer {
+    margin: 1rem;
+    padding: 1rem;
+  }
+  .answer {
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.answer {
+  cursor: pointer;
+}
