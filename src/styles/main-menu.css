@@ -9,8 +9,8 @@
 }
 
 .anim-typewriter {
-  -webkit-animation: typewriter 4s steps(44) 1s 1 normal both, blinkTextCursor 500ms steps(44) infinite normal;
-          animation: typewriter 4s steps(44) 1s 1 normal both, blinkTextCursor 500ms steps(44) infinite normal;
+  -webkit-animation: typewriter 3s steps(44) 1s 1 normal both, blinkTextCursor 500ms steps(44) infinite normal;
+          animation: typewriter 3s steps(44) 1s 1 normal both, blinkTextCursor 500ms steps(44) infinite normal;
 }
 
 @-webkit-keyframes typewriter {
@@ -18,7 +18,7 @@
     width: 0;
   }
   to {
-    width: 14em;
+    width: 16.5em;
   }
 }
 
@@ -27,7 +27,7 @@
     width: 0;
   }
   to {
-    width: 14em;
+    width: 16.5em;
   }
 }
 
@@ -72,7 +72,7 @@
 }
 
 .main-menu .menu-title h1 {
-  font-size: calc(18px + 1vw);
+  font-size: calc(16px + 1vw);
 }
 
 .main-menu .menu-footer {

@@ -7,7 +7,7 @@
   transform: translateY(-50%);
 }
 .anim-typewriter {
-  animation: typewriter 4s steps(44) 1s 1 normal both,
+  animation: typewriter 3s steps(44) 1s 1 normal both,
     blinkTextCursor 500ms steps(44) infinite normal;
 }
 @keyframes typewriter {
@@ -15,7 +15,7 @@
     width: 0;
   }
   to {
-    width: 14em;
+    width: 16.5em;
   }
 }
 @keyframes blinkTextCursor {
