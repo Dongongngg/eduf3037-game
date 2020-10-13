@@ -48,41 +48,4 @@
     border-right-color: transparent;
   }
 }
-
-.bginfo-description {
-  margin: 2rem;
-  padding: 2rem;
-}
-
-.bginfo-description h2 {
-  font-size: calc(14px + 1vw);
-}
-
-@media screen and (max-width: 760px) {
-  .bginfo-description {
-    margin: 1rem;
-    padding: 1rem;
-  }
-}
-
-.ani-slide {
-  -webkit-animation: 1s slide-right 1s forwards;
-          animation: 1s slide-right 1s forwards;
-  -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
-}
-
-@-webkit-keyframes slide-right {
-  to {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-}
-
-@keyframes slide-right {
-  to {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-}
-/*# sourceMappingURL=bginfo.css.map */
+/*# sourceMappingURL=anim-typewriter.css.map */

@@ -9,7 +9,7 @@ export default function Bginfo(props) {
   return (
     <div className="bginfo-box">
       <div className="bginfo-title"></div>
-      <div className="bginfo-description">
+      <div className="bginfo-description ani-slide" id="description">
         <h2>{bginfo[round]}</h2>
       </div>
     </div>

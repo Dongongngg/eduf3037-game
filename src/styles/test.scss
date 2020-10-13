@@ -1,4 +1,5 @@
-.app {
+@import "./anim-typewriter";
+.test {
   height: 100%;
   font-family: "Courier New", Courier, monospace;
 }
@@ -7,7 +8,7 @@ $height-header: 5vh;
 $height-bginfo: 50vh;
 $height-selection: calc(100vh - #{$height-bginfo} - #{$height-header} - 6px);
 
-.app-header {
+.test-header {
   height: $height-header;
   display: flex;
   justify-content: center;
@@ -27,7 +28,7 @@ $height-selection: calc(100vh - #{$height-bginfo} - #{$height-header} - 6px);
 }
 
 @media screen and (max-width: 760px) {
-  .app-header {
+  .test-header {
     .last-choices-box {
       .choice {
         margin-left: 0.25rem;
@@ -41,7 +42,7 @@ $height-selection: calc(100vh - #{$height-bginfo} - #{$height-header} - 6px);
   }
 }
 
-.app-selection {
+.test-selection {
   height: $height-selection;
   display: flex;
   justify-content: space-evenly;
@@ -50,13 +51,13 @@ $height-selection: calc(100vh - #{$height-bginfo} - #{$height-header} - 6px);
 }
 
 @media screen and (max-width: 760px) {
-  .app-selection {
+  .test-selection {
     flex-direction: column;
     height: auto;
   }
 }
 
-.app-bginfo {
+.test-bginfo {
   height: $height-bginfo;
   display: flex;
   justify-content: center;
@@ -65,7 +66,7 @@ $height-selection: calc(100vh - #{$height-bginfo} - #{$height-header} - 6px);
 }
 
 @media screen and (max-width: 760px) {
-  .app-bginfo {
+  .test-bginfo {
     height: calc(100vh - #{$height-header} - 4px);
   }
 }

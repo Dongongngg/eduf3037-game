@@ -15,15 +15,18 @@
   }
   .answer {
     cursor: pointer;
-    border: 1px solid black;
+    border: 2px solid #494949;
+    border-radius: 4px;
     width: 10rem;
     height: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: all 0.2s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     &:hover {
-      transform: scale(1.25);
+      transform: scale(1.2);
+      border: 2px solid black;
     }
     h1 {
       font-size: calc(20px + 1vw);
@@ -36,6 +39,7 @@
     }
   }
 }
+
 @media screen and (max-width: 760px) {
   .selection-box {
     width: 100%;

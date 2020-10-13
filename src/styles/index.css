@@ -2,6 +2,7 @@ body,
 #root {
   height: 100vh;
   margin: 0;
+  font-family: "Courier New", Courier, monospace;
 }
 
 @media screen and (max-width: 760px) {
@@ -19,5 +20,13 @@ h4,
 h5,
 p {
   margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: transparent;
 }
 /*# sourceMappingURL=index.css.map */

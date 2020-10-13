@@ -1,9 +1,60 @@
-.app {
+/* Animation Typing */
+.anim-line {
+  border-right: 3px solid black;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.anim-typewriter {
+  -webkit-animation: typewriter 4s steps(44) 1s 1 normal both, blinkTextCursor 500ms steps(44) infinite normal;
+          animation: typewriter 4s steps(44) 1s 1 normal both, blinkTextCursor 500ms steps(44) infinite normal;
+}
+
+@-webkit-keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 14em;
+  }
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 14em;
+  }
+}
+
+@-webkit-keyframes blinkTextCursor {
+  from {
+    border-right-color: black;
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: black;
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+.test {
   height: 100%;
   font-family: "Courier New", Courier, monospace;
 }
 
-.app-header {
+.test-header {
   height: 5vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -18,7 +69,7 @@
   position: relative;
 }
 
-.app-header .last-choices-box {
+.test-header .last-choices-box {
   position: absolute;
   left: 1rem;
   display: -webkit-box;
@@ -29,23 +80,23 @@
           align-items: center;
 }
 
-.app-header .last-choices-box .choice {
+.test-header .last-choices-box .choice {
   margin-left: 1rem;
   margin-right: 1rem;
 }
 
 @media screen and (max-width: 760px) {
-  .app-header .last-choices-box .choice {
+  .test-header .last-choices-box .choice {
     margin-left: 0.25rem;
     margin-right: 0.25rem;
   }
-  .app-header .round {
+  .test-header .round {
     position: absolute;
     right: 1rem;
   }
 }
 
-.app-selection {
+.test-selection {
   height: calc(100vh - 50vh - 5vh - 6px);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -60,7 +111,7 @@
 }
 
 @media screen and (max-width: 760px) {
-  .app-selection {
+  .test-selection {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -69,7 +120,7 @@
   }
 }
 
-.app-bginfo {
+.test-bginfo {
   height: 50vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -84,8 +135,8 @@
 }
 
 @media screen and (max-width: 760px) {
-  .app-bginfo {
+  .test-bginfo {
     height: calc(100vh - 5vh - 4px);
   }
 }
-/*# sourceMappingURL=app.css.map */
+/*# sourceMappingURL=test.css.map */

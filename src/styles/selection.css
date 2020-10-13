@@ -27,7 +27,8 @@
 
 .selection-box .answer {
   cursor: pointer;
-  border: 1px solid black;
+  border: 2px solid #494949;
+  border-radius: 4px;
   width: 10rem;
   height: 2rem;
   display: -webkit-box;
@@ -41,11 +42,14 @@
           justify-content: center;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .selection-box .answer:hover {
-  -webkit-transform: scale(1.25);
-          transform: scale(1.25);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  border: 2px solid black;
 }
 
 .selection-box .answer h1 {
