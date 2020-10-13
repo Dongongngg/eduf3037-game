@@ -1,10 +1,10 @@
-import React, { useEffect } from "react";
+import React from "react";
 // data
 import bginfo from "../bginfo.json";
 //styles
 import "../styles/bginfo.css";
 export default function Bginfo(props) {
-  const { round, loadFlag } = props;
+  const { round } = props;
 
   return (
     <div className="bginfo-box">

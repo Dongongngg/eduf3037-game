@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { Redirect } from "react-router-dom";
 //components
 import Header from "../components/Header";
 import Selections from "../components/Selections";
@@ -57,7 +56,7 @@ function Test(props) {
       let result = handleResult(answerList);
       props.history.push(`/ending/${result}`);
     }
-  }, [endingFlag]);
+  }, [endingFlag, answerList, props.history]);
 
   return (
     <div className="test" id="top">
