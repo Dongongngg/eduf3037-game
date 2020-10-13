@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 //pages
 import Main_menu from "./pages/Main_menu";
 import Test from "./pages/Test";
@@ -9,15 +9,9 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route path="/test">
-          <Test />
-        </Route>
-        <Route path="/">
-          <Main_menu />
-        </Route>
-        <Route path="/ending">
-          <Main_menu />
-        </Route>
+        <Route path="/test" component={Test}></Route>
+        <Route path="/" exact component={Main_menu}></Route>
+        <Route path="/ending/:result" component={Ending}></Route>
       </Switch>
     </Router>
   );

@@ -1,0 +1,4 @@
+//heights
+$height-header: 5vh;
+$height-bginfo: 50vh;
+$height-selection: calc(100vh - #{$height-bginfo} - #{$height-header} - 6px);

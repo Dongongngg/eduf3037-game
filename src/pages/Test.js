@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
+import { Redirect } from "react-router-dom";
 //components
+import Header from "../components/Header";
 import Selections from "../components/Selections";
 import Bginfo from "../components/Bginfo";
 //styles
@@ -7,15 +9,14 @@ import "../styles/test.css";
 //data
 import data from "../round.json";
 
-function Test() {
+function Test(props) {
   const [answerList, setAnswerList] = useState([]);
   const [round, setRound] = useState(1);
   const [selection, setSelection] = useState(data[1]);
-  const [loadFlag, setLoadFlag] = useState(false);
   const [endingFlag, setEndingFlag] = useState(false);
   //scroll to location
-  const scrollTo = (props) => {
-    document.getElementById(props).scrollIntoView({ behavior: "smooth" });
+  const scrollTo = (id) => {
+    document.getElementById(id).scrollIntoView({ behavior: "smooth" });
   };
   //handle each round and get answer from selection area
 
@@ -23,7 +24,6 @@ function Test() {
     setRound(round + 1);
     setAnswerList([...answerList, answer]);
     scrollTo("top");
-    setLoadFlag(true);
   };
 
   //when round reaches 6, redirect to ending
@@ -35,30 +35,41 @@ function Test() {
     }
   }, [round]);
 
-  // useEffect(() => {
-  //   if (endingFlag) {
-  //   }
-  // }, [endingFlag]);
+  useEffect(() => {
+    const handleResult = (answer) => {
+      let cntA = 0;
+      let cntB = 0;
+      answer.forEach((e) => {
+        if (e === "A") {
+          cntA = cntA + 1;
+        } else {
+          cntB = cntB + 1;
+        }
+      });
+      if (cntA > cntB) {
+        return "Good Ending";
+      } else {
+        return "Bad Ending";
+      }
+    };
+
+    if (endingFlag) {
+      let result = handleResult(answerList);
+      props.history.push(`/ending/${result}`);
+    }
+  }, [endingFlag]);
 
   return (
     <div className="test" id="top">
       <header className="test-header">
-        <div className="last-choices-box">
-          <h3>Last choices:</h3>
-          {answerList.map((e, i) => (
-            <h2 key={i} className="choice">
-              {answerList[i]}
-            </h2>
-          ))}
-        </div>
-        {round >= 6 ? (
-          <h1 className="round">Done</h1>
-        ) : (
-          <h1 className="round">{round + "/" + Object.keys(data).length}</h1>
-        )}
+        <Header
+          answerList={answerList}
+          round={round}
+          maxRound={Object.keys(data).length}
+        />
       </header>
       <footer className="test-bginfo">
-        <Bginfo round={round} loadFlag={loadFlag} />
+        <Bginfo round={round} />
       </footer>
       <main className="test-selection ani-slide">
         <Selections selection={selection} handleRound={handleRound} />

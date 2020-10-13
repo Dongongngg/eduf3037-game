@@ -82,7 +82,7 @@
 }
 
 .main-menu .menu-footer p {
-  font-size: calc(4px + 1vw);
+  font-size: calc(8px + 1vw);
 }
 
 .main-menu .menu-footer p a {
@@ -100,8 +100,6 @@
 
 .main-menu .menu-btn button {
   border-radius: 4px;
-  background-color: silver;
-  border: 0.5px solid black;
   color: transparent;
   text-align: center;
   font-size: calc(12px + 1vw);
@@ -115,6 +113,7 @@
 .main-menu .menu-btn button a {
   font-family: "Courier New", Courier, monospace;
   font-weight: bold;
+  color: black;
 }
 
 .main-menu .menu-btn button:hover {
