@@ -1,4 +1,4 @@
-This is a story test I created for my girlfriend's uni education course(She writes all the stories and choices). The result will show you if you are a good teacher.
+This is a story test I created for my girlfriend's uni education course (She will create scenes and choices). The result will show you if you are a good teacher.
 There are 5 scenes in this game, each scene has two choices. After the round 5 you will see the ending which is based on your choices.
 
 ### `npm install`
