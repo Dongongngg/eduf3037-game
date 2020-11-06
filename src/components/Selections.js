@@ -1,6 +1,6 @@
 import React from "react";
 //style
-import "../styles/selection.css";
+import "../styles/selection.scss";
 
 export default function Selections(props) {
   const { selection, handleRound } = props;

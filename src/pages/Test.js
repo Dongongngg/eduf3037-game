@@ -4,7 +4,7 @@ import Header from "../components/Header";
 import Selections from "../components/Selections";
 import Bginfo from "../components/Bginfo";
 //styles
-import "../styles/test.css";
+import "../styles/test.scss";
 //data
 import data from "../round.json";
 

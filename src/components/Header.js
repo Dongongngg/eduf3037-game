@@ -1,6 +1,6 @@
 import React from "react";
 //
-import "../styles/header.css";
+import "../styles/header.scss";
 
 export default function Header(props) {
   const { answerList, round, maxRound } = props;

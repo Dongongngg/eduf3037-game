@@ -2,7 +2,7 @@ import React from "react";
 // data
 import bginfo from "../bginfo.json";
 //styles
-import "../styles/bginfo.css";
+import "../styles/bginfo.scss";
 export default function Bginfo(props) {
   const { round } = props;
 

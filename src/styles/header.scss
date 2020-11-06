@@ -1,4 +1,4 @@
-@use "./variables";
+@import "./variables.scss";
 .test-header {
   height: $height-header;
   display: flex;

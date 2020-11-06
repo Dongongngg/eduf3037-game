@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 //styles
-import "../styles/ending.css";
+import "../styles/ending.scss";
 
 export default function Ending(props) {
   return (

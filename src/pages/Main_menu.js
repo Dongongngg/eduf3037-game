@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 //styles
-import "../styles/main-menu.css";
+import "../styles/main-menu.scss";
 
 export default function Main_menu() {
   setTimeout(() => {
