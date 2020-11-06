@@ -6,34 +6,34 @@ import Bginfo from "../components/Bginfo";
 //styles
 import "../styles/test.scss";
 //data
-import data from "../round.json";
+import data from "../data/round.json";
 
 function Test(props) {
+  //  id of questions
+  const [questionId, setQuestionId] = useState(1);
+  const [currentQuestion, setCurrentQuestion] = useState({});
+  //  store answers
   const [answerList, setAnswerList] = useState([]);
-  const [round, setRound] = useState(1);
-  const [selection, setSelection] = useState(data[1]);
   const [endingFlag, setEndingFlag] = useState(false);
   //scroll to location
   const scrollTo = (id) => {
     document.getElementById(id).scrollIntoView({ behavior: "smooth" });
   };
   //handle each round and get answer from selection area
-
-  const handleRound = (answer) => {
-    setRound(round + 1);
+  const handleNextQuestion = (next, answer) => {
+    setQuestionId(next);
     setAnswerList([...answerList, answer]);
     scrollTo("top");
   };
 
-  //when round reaches 6, redirect to ending
+  // Get current question data by question id
   useEffect(() => {
-    if (round <= Object.keys(data).length) {
-      setSelection(data[round]);
-    } else {
-      setEndingFlag(true);
-    }
-  }, [round]);
+    let questions = data.find((question) => question.id == questionId);
+    console.log(questions);
+    setCurrentQuestion(questions);
+  }, [questionId]);
 
+  // get ending by comparing number of answer A and B
   useEffect(() => {
     const handleResult = (answer) => {
       let cntA = 0;
@@ -61,18 +61,17 @@ function Test(props) {
   return (
     <div className="test" id="top">
       <header className="test-header">
-        <Header
-          answerList={answerList}
-          round={round}
-          maxRound={Object.keys(data).length}
-        />
+        <Header answerList={answerList} id={questionId} />
       </header>
-      <footer className="test-bginfo">
-        <Bginfo round={round} />
-      </footer>
-      <main className="test-selection ani-slide">
-        <Selections selection={selection} handleRound={handleRound} />
+      <main className="test-bginfo">
+        <Bginfo data={currentQuestion} />
       </main>
+      <footer className="test-selection ani-slide">
+        <Selections
+          data={currentQuestion}
+          handleNextQuestion={handleNextQuestion}
+        />
+      </footer>
     </div>
   );
 }
