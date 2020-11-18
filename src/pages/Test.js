@@ -83,7 +83,7 @@ function Test(props) {
       <main
         className="test-bginfo"
         style={{
-          backgroundImage: `url(/img/${currentQuestion.id}.png)`,
+          backgroundImage: `url(/img/${currentQuestion.id || '0'}.png)`,
           backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat',
           backgroundPosition: 'center center',
