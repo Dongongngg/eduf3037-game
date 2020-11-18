@@ -1,5 +1,6 @@
 //reset
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Ubuntu&display=swap');
+@import './variables.scss';
 body,
 #root {
   height: 100vh;
@@ -29,4 +30,9 @@ a {
 }
 a:visited {
   color: transparent;
+}
+
+*::selection {
+  background-color: $black;
+  color: $purple1;
 }

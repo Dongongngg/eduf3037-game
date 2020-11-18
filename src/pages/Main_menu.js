@@ -6,7 +6,7 @@ import '../styles/main-menu.scss';
 export default function Main_menu() {
   setTimeout(() => {
     document.getElementById('menu-btn').style.display = 'block';
-  }, 6000);
+  }, 4000);
 
   return (
     <div className="main-menu">

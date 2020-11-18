@@ -6,6 +6,8 @@
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
+  background-color: $purple1;
+
   p {
     padding: 2rem;
     font-size: calc(1rem + 1vw);
@@ -14,8 +16,24 @@
   .try-again {
     margin: 1rem;
     padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     a {
       text-decoration: underline;
+    }
+  }
+  .end-icon {
+    font-size: 2rem;
+    padding: 1rem;
+    cursor: pointer;
+    -webkit-transition: all 0.75s ease-in-out;
+    -moz-transition: all 0.75s ease-in-out;
+    -o-transition: all 0.75s ease-in-out;
+    -ms-transition: all 0.75s ease-in-out;
+    transition: all 0.75s ease-in-out;
+    &:hover {
+      transform: rotate(-360deg);
     }
   }
 }

@@ -9,7 +9,11 @@ export default function Popup(props) {
   return (
     <div className="container" style={{ display: show ? 'flex' : 'none' }}>
       <div className="popup">
-        <h2 className="title">Result Ready</h2>
+        <div style={{ display: 'flex', alignItems: 'center' }}>
+          <i className="far fa-grin-beam popup-icon"></i>
+          <h2 className="title">Result Ready</h2>
+        </div>
+
         <button className="button" onClick={checkResult}>
           <h2>Check</h2>
         </button>
