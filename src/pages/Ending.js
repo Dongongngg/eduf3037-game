@@ -1,7 +1,8 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react';
+import PropsTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 //styles
-import "../styles/ending.scss";
+import '../styles/ending.scss';
 
 export default function Ending(props) {
   return (
@@ -15,3 +16,6 @@ export default function Ending(props) {
     </div>
   );
 }
+Ending.propTypes = {
+  match: PropsTypes.object,
+};

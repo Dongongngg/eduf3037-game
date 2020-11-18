@@ -1,6 +1,7 @@
-import React from "react";
+import React from 'react';
+import PropsTypes from 'prop-types';
 //style
-import "../styles/selection.scss";
+import '../styles/selection.scss';
 
 export default function Selections(props) {
   const { data, handleNextQuestion } = props;
@@ -10,14 +11,13 @@ export default function Selections(props) {
         data.choices.map((choice, i) => (
           <div className="selection-box" key={i}>
             <div className="img">{choice.img}</div>
-            <div className="description">
-              <p>{choice.des}</p>
-            </div>
-            <div
-              className="answer"
-              onClick={() => handleNextQuestion(choice.next, choice.value)}
-            >
-              <h1>{choice.name}</h1>
+            <div className="text">
+              <div className="description">
+                <p>{choice.des}</p>
+              </div>
+              <div className="answer" onClick={() => handleNextQuestion(choice.next, choice.value)}>
+                <h1>{choice.name}</h1>
+              </div>
             </div>
           </div>
         ))
@@ -27,3 +27,7 @@ export default function Selections(props) {
     </>
   );
 }
+Selections.propTypes = {
+  data: PropsTypes.object,
+  handleNextQuestion: PropsTypes.func,
+};

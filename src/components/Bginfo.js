@@ -1,7 +1,7 @@
-import React from "react";
-
+import React from 'react';
+import PropsTypes from 'prop-types';
 //styles
-import "../styles/bginfo.scss";
+import '../styles/bginfo.scss';
 
 export default function Bginfo({ data }) {
   return (
@@ -13,3 +13,7 @@ export default function Bginfo({ data }) {
     </div>
   );
 }
+
+Bginfo.propTypes = {
+  data: PropsTypes.object,
+};

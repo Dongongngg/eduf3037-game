@@ -1,19 +1,17 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { Link } from 'react-router-dom';
 //styles
-import "../styles/main-menu.scss";
+import '../styles/main-menu.scss';
 
 export default function Main_menu() {
   setTimeout(() => {
-    document.getElementById("menu-btn").style.display = "block";
+    document.getElementById('menu-btn').style.display = 'block';
   }, 6000);
 
   return (
     <div className="main-menu">
       <header className="menu-title">
-        <h1 className="anim-typewriter anim-line">
-          Are you a creative teacher?
-        </h1>
+        <h1 className="anim-typewriter anim-line">Are you a creative teacher?</h1>
       </header>
       <main className="menu-btn" id="menu-btn">
         <button>

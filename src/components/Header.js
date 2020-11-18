@@ -1,13 +1,14 @@
-import React from "react";
+import React from 'react';
+import PropsTypes from 'prop-types';
 //
-import "../styles/header.scss";
+import '../styles/header.scss';
 
 export default function Header(props) {
   const { answerList, id } = props;
   return (
     <>
       <div className="last-choices-box">
-        <h3 style={{ fontSize: "1rem" }}>Last choices:</h3>
+        <h3 style={{ fontSize: '1rem' }}>Last choices:</h3>
         {answerList.map((e, i) => (
           <h2 key={i} className="choice">
             {answerList[i]}
@@ -19,3 +20,8 @@ export default function Header(props) {
     </>
   );
 }
+
+Header.propTypes = {
+  answerList: PropsTypes.array,
+  id: PropsTypes.string,
+};

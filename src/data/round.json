@@ -1,160 +1,379 @@
 [
   {
-    "id": 1,
+    "id": "0",
     "title": "title of question 1",
-    "question": "1 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit",
+    "question": "You are a 3rd year education student at the University of Sydney. One day, you are walking towards the Education Building, there is a shining portal that looks strange next to the main entrance. You cannot hold your educational curiosity so you decide to walk in and discover what that is. Entering in the strange portal, after a few seconds of scientific sound effects that we cannot add on because of copyright and budget, you stand in front of a door. The door was made with oak wood. The size of that door is not too big and not too small. There is a sign on that door: Do NOT open it. Then you decide to...",
     "choices": [
       {
-        "name": "Yes",
+        "name": "Push",
         "value": "A",
-        "des": "Choice A for question 1.",
+        "des": "Push the door to discover what is inside.",
         "img": "",
-        "next": 2
+        "next": "1"
       },
       {
-        "name": "No",
+        "name": "Leave",
         "value": "",
-        "des": "Choice B for question 1.",
+        "des": "Leave that strange place and try to find a way out as you can smell the danger.",
         "img": "",
-        "next": 99
+        "next": "99"
       }
     ]
   },
   {
-    "id": 2,
+    "id": "1",
     "title": "title of question 2",
-    "question": "2 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit",
-    "description": ["Choice A for question 2.", "Choice B for question 2."],
-    "img": ["", ""],
+    "question": "You ignore that sign and push the door. You find that it is a room with tall walls that reach up to the ceiling. There is a huge desk at the centre of that room. You find three items on that desk, with an old parchment paper that says “Pick an item. Trust your instinct!”. What will you pick?",
     "choices": [
       {
-        "name": "Yes",
+        "name": "Dictionary",
         "value": "A",
-        "des": "Choice A for question 1.",
+        "des": " A beautifully packaged dictionary that seems to radiate strange energy.",
         "img": "",
-        "next": 3
+        "next": "L-1"
       },
       {
-        "name": "No",
+        "name": "Magic map",
         "value": "B",
-        "des": "Choice B for question 1.",
+        "des": "A floating map, when you use your finger to point different countries on that map, you can hear dialects of English.",
         "img": "",
-        "next": 1
+        "next": "T-1"
       },
       {
-        "name": "No",
+        "name": "π cake",
         "value": "C",
-        "des": "Choice C for question 1.",
+        "des": "A pi-not-pie cake that looks really delicious and attractive. It can be changed in size but you can never have a bite.",
         "img": "",
-        "next": 1
+        "next": "M-1"
       }
     ]
   },
   {
-    "id": 3,
-    "title": "title of question 3",
-    "question": "3 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit",
-    "description": ["Choice A for question 3.", "Choice B for question 3."],
-    "img": ["", ""],
+    "id": "L-1",
+    "title": "Behaviour management",
+    "question": "You suddenly feel dizzy and then lose consciousness. After a while, you wake up and realise that you have been a secondary school teacher at Mysterious High School which is a mysterious high school somewhere in NSW.  There are 15 students in your class, and you notice that they are learning Chinese, which means you are a Chinese language teacher now. Before you can completely adopt this setting, one of the students wants to challenge you. This student is Ashley, who makes a paper ball and  begins to play with it intently. Even though you are not familiar with the class right now, as a teacher you believe you have the responsibility to manage this behaviour. What are you going to do?",
+    "choices": [
+      {
+        "name": "warn",
+        "value": "A",
+        "des": "Confiscate the paper ball and warn Ashley that it is a disturbing behaviour now. But if Ashley ignores your instruction, this will be considered as rude behaviour, and Ashley has to go to the staff room and explain this behaviour to the head teacher immediately.",
+        "img": "",
+        "next": "L-2"
+      },
+      {
+        "name": "performance",
+        "value": "B",
+        "des": "Ask the student to come to the front with the paper ball, and use the paper ball to act a new word on the white board. Other students have to guess the word according to that action Ashley made. After this performance you will ask Ashley to put the paper ball to the bin and say that it is not the right time to play with the paper ball, and you do not want to see the paper ball again in this classroom. You want all students to be concentrated and follow your instruction. If everyone behaves well, we may have a chance to do this guess the action activity again.",
+        "img": "",
+        "next": "L-2"
+      }
+    ]
+  },
+  {
+    "id": "L-2",
+    "title": "Non-verbal",
+    "question": "After you finish dealing with the challenging behaviour issue, you move on to the next activity. You are going to explain the new Chinese sentence structure. When you compare the Chinese sentence structure with the English sentence structure, you notice that most of the students feel a bit confused, and you are losing their attention. What are you going to do?",
     "choices": [
       {
         "name": "Yes",
         "value": "A",
-        "des": "Choice A for question 1.",
+        "des": "Ask students to write down both sentence structures in their notebook, and discuss the differences between Chinese and English sentence structure in groups for 5 minutes. After they have discussed and shared the differences they find out, you will explain the differences in structure to help them understand the Chinese sentence structure better.",
         "img": "",
-        "next": 4
+        "next": "L-3"
       },
       {
         "name": "No",
         "value": "B",
-        "des": "Choice B for question 1.",
+        "des": "Have a silent moment for a few seconds to give students some time to think about the concept by themselves first. Then they will be divided into groups of 3-4 and each of the students will be given a role as part of the sentence. They will be asked to find their position in a Chinese and English sentence respectively and act in different ways to different sentences.",
         "img": "",
-        "next": 2
+        "next": "L-3"
       }
     ]
   },
   {
-    "id": 4,
-    "title": "title of question 4",
-    "question": "4 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit",
-    "description": ["Choice A for question 4.", "Choice B for question 4."],
-    "img": ["", ""],
+    "id": "L-3",
+    "title": "Drama content",
+    "question": "After this lesson, you decide to adopt some drama teaching strategies into your Chinese language classroom. The topic of this lesson is “family”, you think it would be a great idea to…",
     "choices": [
       {
         "name": "Yes",
         "value": "A",
-        "des": "Choice A for question 1.",
+        "des": "Have a dialogue practice activity with students. You divide students into pairs. By providing some dialogues about describing their family members on a worksheet, students are required to rewrite the sentences based on their own situation, and practice speaking with their partner then. You will go around the classroom to see how they go and give advice on their pronunciation.",
         "img": "",
-        "next": 5
+        "next": "L-4"
       },
       {
         "name": "No",
         "value": "B",
-        "des": "Choice B for question 1.",
+        "des": "Have a role play activity with students. You divide students into different groups. Instead of having each group with the same size of students, the number of students in those groups are uneven. Students have to react to their group size to make a consideration of which type of family that can be and plan for their role play under that setting. For beginner students, they will be provided with some useful sentences to use in their role play. For continuer students, they will have to construct some culture related content into their role play. This activity may take three to four lessons for students to develop and they will perform their role play during the last lesson in class.",
         "img": "",
-        "next": 3
+        "next": "L-4"
       }
     ]
   },
   {
-    "id": 5,
-    "title": "title of question 5",
-    "question": "5 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit",
-    "description": ["Choice A for question 5.", "Choice B for question 5."],
-    "img": ["", ""],
+    "id": "L-4",
+    "title": "Visual art",
+    "question": "It is not a good idea to learn a language with words only. You want to include some visual contents into your teaching. There are two ways of doing so that jump into your mind, which of the following lessons would you like to choose?",
     "choices": [
       {
-        "name": "Yes",
+        "name": "choose",
         "value": "A",
-        "des": "Choice A for question 1.",
+        "des": "Students will be given some images to analyse. There will be some questions related to each of those images on a worksheet. The order of those images are fixed. After analysing the images and responding to the questions, students are required to write a short story based on that series of images.",
         "img": "",
-        "next": 6
+        "next": "L-5"
       },
       {
-        "name": "No",
+        "name": "choose",
         "value": "B",
-        "des": "Choice B for question 1.",
+        "des": "Giving students some images that can be ordered according to their own taste. Students are required to put the image into different orders and tell a story of how they understand the images and write that in Chinese. At the end of that lesson, students will present their stories to the class.",
         "img": "",
-        "next": 4
+        "next": "L-5"
       }
     ]
   },
   {
-    "id": 6,
-    "title": "title of question 6",
-    "question": "6 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit",
-    "description": ["Choice A for question 6.", "Choice B for question 6."],
-    "img": ["", ""],
+    "id": "L-5",
+    "title": "Excursion",
+    "question": "By fulfilling all the requirements, you gain the permission to hold an Chinese language excursion for your class to help the students learn the topic better. Students are required to do a summative assignment with the excursion as part of it. What will you plan to do?",
     "choices": [
       {
-        "name": "Yes",
+        "name": "Chinatown",
         "value": "A",
-        "des": "Choice A for question 1.",
+        "des": "You, with your students, will go to Chinatown in the city and write a diary in Chinese after that. Students may have been there a few times and now you want them to consider recommending some places in Chinatown to their family members through this visit based on their own interests.",
         "img": "",
-        "next": 6
+        "next": "L-5"
       },
       {
-        "name": "No",
+        "name": "Museum",
         "value": "B",
-        "des": "Choice B for question 1.",
+        "des": "You, with your students, will go to the Museum of Chinese in Australia. Before going, you will ask students to explore the website of the Museum of Chinese Australian History to see the important factors which impact the living of Chinese people in Australia at different periods of time. Then, before going, students should have at least one feature that they are interested at. Through their visit to the Museum of Chinese in Australia, they have to choose another feature and then analyse and compare both of the features when considering their impact on Australian families in relation to cultural bond.",
         "img": "",
-        "next": 5
+        "next": "L-5"
       }
     ]
   },
   {
-    "id": 99,
+    "id": "T-1",
+    "title": "Behaviour management",
+    "question": "A strong light suddenly slashes your eyes, after your sight has recovered you find that you are standing at the front of a classroom, and there are 15 students from different cultural backgrounds in there. You realize that you are a TESOL teacher now. Suddenly, a student named Taylor starts singing and dancing in the classroom without any permission. What are you going to do?",
+    "choices": [
+      {
+        "name": "get out",
+        "value": "A",
+        "des": "Ask Taylor to get out of the classroom, because that behaviour breaks the classroom rule. Taylor needs to apologize before entering the classroom again",
+        "img": "",
+        "next": "T-2"
+      },
+      {
+        "name": "sit down",
+        "value": "B",
+        "des": "Ask Taylor to sit down and tell Taylor that is a good performance, but it is not acceptable to perform without teacher’s permission due to our classroom rule. But we will have a dramatic activity later which means everyone gets the chance to perform during that activity.",
+        "img": "",
+        "next": "T-2"
+      }
+    ]
+  },
+  {
+    "id": "T-2",
+    "title": "Non-verba",
+    "question": "After you finish dealing with the challenging  behaviour issue, you keep on teaching. When you are teaching the concept of chronology, you notice that most of the students feel a bit confused, and you are losing their attention. What are you going to do?",
+    "choices": [
+      {
+        "name": "repeat",
+        "value": "A",
+        "des": "You will keep talking about that concept, repeat again and again. And you will provide further explanation with some more examples to your students to support their understanding of that new concept.",
+        "img": "",
+        "next": "T-3"
+      },
+      {
+        "name": "silence",
+        "value": "B",
+        "des": "Have a silent moment for a few seconds to give students some time to think about the sentence stress. The activity will go for three turns. In the first turn, students will have to clap their hands whenever they hear the word about time in those sentences. Then, these sentences will be repeated by the teacher. This time, students should clap their hands when they hear the time and the subject in those sentences. Finally, they clap their hands when there is a subject, time word or action in those sentences. Through this building up process, students will have a deeper understanding of how to distinguish the differences between those sentence constituents.",
+        "img": "",
+        "next": "T-3"
+      }
+    ]
+  },
+  {
+    "id": "T-3",
+    "title": "Drama content",
+    "question": "You decide to apply drama teaching strategies to your lesson to help students practise their language skills. Which of the following strategies would you like to apply?",
+    "choices": [
+      {
+        "name": "dialogue",
+        "value": "A",
+        "des": "You will prepare some dialogue scripts for your students. The dialogues on the scripts have already been differentiated into different difficulty levels. They have to work in groups to practise their speaking. They will perform their dialogues in class at the end of this lesson.",
+        "img": "",
+        "next": "T-4"
+      },
+      {
+        "name": "scenario",
+        "value": "B",
+        "des": "You will provide some scenarios that relate to the topic. Students are required to work in groups to construct a script based on the selected scenario. Students should decide their character in the scenario and design their own script by using the sentence structure we have learnt so far. They will practise their performance with script in their group. At the end of this lesson, each group will perform to the class without their scripts.",
+        "img": "",
+        "next": "T-4"
+      }
+    ]
+  },
+  {
+    "id": "T-4",
+    "title": "Visual art",
+    "question": "The topic of your next lesson is past tense verbs. There are two ways to teach this topic that jump into your mind, which of the following would you like to choose?",
+    "choices": [
+      {
+        "name": "list",
+        "value": "A",
+        "des": "First of all, you will hand out a word list with some verbs and their past tense to your students. After everyone has practised the pronunciation of the words together, you will ask them to play a memory game to memorise the verbs with their past tense. At the end of the lesson, you will provide a short passage with some past tense verbs in it. Students are required to highlight these words and respond to some questions related to that passage together.",
+        "img": "",
+        "next": "T-5"
+      },
+      {
+        "name": "pictures",
+        "value": "B",
+        "des": "You will put a series of pictures of an interesting story on the whiteboard, students will discuss in pairs to find out the correct sequence of this story. Each picture on the whiteboard represents a verb. After they get the meaning of those verbs and put the picture into the correct order, you will then introduce the verbs and their past tense with the pictures. Students have to copy down the new words into their notebook. After everyone has practised the pronunciation of the words together, you will act the verbs and ask them to raise up their hands and guess the word. At the end of this lesson, students are required to use those words to construct 2-3 simple sentences.",
+        "img": "",
+        "next": "T-5"
+      }
+    ]
+  },
+  {
+    "id": "T-5",
+    "title": "Excursion",
+    "question": "By fulfilling all the requirements, you gain the permission to hold an ESL excursion for your class to help the students learn the topic “simple past tense”. Students are required to do a summative assignment with the excursion as part of it. What will you plan to do?",
+    "choices": [
+      {
+        "name": "movie",
+        "value": "A",
+        "des": "You will lead your students to watch an on-showing movie at Event Cinema. After they return to school, they need to use simple past tense to write a short recount about the movie they watched.",
+        "img": "",
+        "next": "T-5"
+      },
+      {
+        "name": "university",
+        "value": "B",
+        "des": "You will lead your students to visit your university. During your visit,  you will introduce different faculties and the history of the university to your students. You will also share your learning experience with them to give them an overview of territory study. Students are encouraged to take some pictures during the excursion. After they return to school, the students are required to use wix to create a web page of a University faculty which you have introduced during the excursion. They need to use simple past tense to demonstrate what they saw and learnt during the excursion.",
+        "img": "",
+        "next": "T-5"
+      }
+    ]
+  },
+  {
+    "id": "M-1",
+    "title": "Behaviour management",
+    "question": "A strong light suddenly slashes your eyes, after your sight has recovered you find that you are standing in front of a classroom, and there are 30 students with their mathematics textbook on the desk in that classroom. You realize that you are a mathematics teacher now. You are writing some quick questions for students to solve on the whiteboard. Suddenly, you hear someone at the back of the classroom start singing songs loudly. You recognise that voice is from Sam. Then you...",
+    "choices": [
+      {
+        "name": "stop",
+        "value": "A",
+        "des": "Ask Sam to shut up and stop singing. Give Sam a warning for misbehaviour in the classroom. “Be quiet and do your work! Otherwise, I’ll  send you to the staff room and you have to explain this behaviour with the head teacher immediately!”",
+        "img": "",
+        "next": "M-2"
+      },
+      {
+        "name": "opportunity",
+        "value": "B",
+        "des": "Give Sam a compliment for showing this artistic characteristic.  Politely, ask Sam to stop singing it so that the rest of the students will not be disrupted. Also, give Sam an opportunity to collaborate with you to think of some songs about mathematics and perform it to the class next time.",
+        "img": "",
+        "next": "M-2"
+      }
+    ]
+  },
+  {
+    "id": "M-2",
+    "title": "Non-verbal",
+    "question": "After you introduce the students to a new maths concept. This is a total new topic for the students to learn after their last exam. You finish the demonstration with an example, but students are still confused when you ask them questions about this concept. Then you…",
+    "choices": [
+      {
+        "name": "continue",
+        "value": "A",
+        "des": "Try to continue by providing another similar example and keep asking questions about it until the student can answer one of the questions. Then move on so that you will finish everything you planned for this lesson.",
+        "img": "",
+        "next": "M-3"
+      },
+      {
+        "name": "think",
+        "value": "B",
+        "des": "Give students some time to think about the question by themselves. Allow students to post questions to you anonymously using devices. Think about another way to scaffold their understanding. You will give them some matchsticks for the activity. They have to use those matchsticks to build up different geometric shapes we have learnt so far and find out their side length by counting the number of matchsticks. ",
+        "img": "",
+        "next": "M-3"
+      }
+    ]
+  },
+  {
+    "id": "M-3",
+    "title": "Drama content",
+    "question": "You looked at the drama classroom next to you, seeing students’ happy faces and can feel that magic dynamic. You decide to adopt some drama teaching strategies into your mathematics classroom. Then you...",
+    "choices": [
+      {
+        "name": "scenarios",
+        "value": "A",
+        "des": "Give them some scenarios in the question. Students work on the questions and solve them individually.",
+        "img": "",
+        "next": "M-4"
+      },
+      {
+        "name": "topics",
+        "value": "B",
+        "des": "By giving the three topics “food”, “colour” and “music”, they have to write a profile for a persona by themselves including descriptions of these topics. In the next lesson, they have to answer the questions related to the topic “Venn diagram” by acting as that persona of their own instead of themselves. Students are encouraged to be creative.",
+        "img": "",
+        "next": "M-4"
+      }
+    ]
+  },
+  {
+    "id": "M-4",
+    "title": "Visual art",
+    "question": "The topic of your next lesson is rule for patterns. There are two ways to teach this topic jumping into your mind, which of the following lessons would you like to choose?",
+    "choices": [
+      {
+        "name": "matchsticks",
+        "value": "A",
+        "des": "You draw some triangles on the white boards. By asking students how many matchsticks they would need to make one triangle, two triangles and three triangles with the side length as one matchstick, you try to make students realise the difference between the numbers and find out the rule of the number patterns.",
+        "img": "",
+        "next": "M-5"
+      },
+      {
+        "name": "pattern",
+        "value": "B",
+        "des": "Before leading students to the numerical world, you want them to gain the idea of “pattern” by looking at tessellations. Recognise the pattern of shapes in the tessellations, students will draw a tessellation by their own. By comparing the number of shapes in one tessellation, two tessellations and three tessellations, they will then be introduced to the numerical patterns and therefore find out a rule for those numbers.",
+        "img": "",
+        "next": "M-5"
+      }
+    ]
+  },
+  {
+    "id": "M-5",
+    "title": "Excursion",
+    "question": "By fulfilling all the requirements, you gain the permission to hold a mathematics excursion for your class to help the students learn the topic “pattern”. Students are required to do a summative assignment with the excursion as part of it. Then you decide… ",
+    "choices": [
+      {
+        "name": "Aboriginal",
+        "value": "A",
+        "des": "You will go to the Aboriginal Art Galleries with your students. The symbolism in the Aboriginal artworks tells the stories of the Aboriginal culture. As an inseparable part of our learning journey, you want your students to understand the significance of the Aboriginal culture to us. Students are required to discover the use of patterns in the Aboriginal artworks by observing the different symbols on them. Then, they will design a question related to the topic “pattern” and give their own interpretation of the meaning of that symbol by writing a few paragraphs about them.",
+        "img": "",
+        "next": "M-5"
+      },
+      {
+        "name": "Contemporary",
+        "value": "B",
+        "des": "You will go to the Museum of Contemporary Art Australia with your students. The use of patterns is common in contemporary artworks. Students are required to find out one use of natural patterns and one use of man-made patterns for their assessment. Then, they have to choose one from the two patterns they found and design a mathematics question about it. Students are also required to write a short introduction of the patterns they choose by analysing how this visual element affects the viewer’s feeling and the meaning behind it from their own point of view.",
+        "img": "",
+        "next": "L-5"
+      }
+    ]
+  },
+  {
+    "id": "99",
     "title": "title of question 99",
-    "question": "99 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit",
-    "description": ["Choice A for question 99.", "Choice B for question 99."],
-    "img": ["", ""],
+    "question": "you cannot find the way out. No matter how far you walk away, you always return to that oak door. You realise that the other side of the door is the only way to get out of this place.",
     "choices": [
       {
-        "name": "Yes",
+        "name": "Push",
         "value": "A",
-        "des": "Choice A for question 99.",
+        "des": "Push the door to discover what is inside.",
         "img": "",
-        "next": 2
+        "next": "1"
       }
     ]
   }
