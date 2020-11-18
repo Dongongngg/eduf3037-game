@@ -18,11 +18,11 @@ export default function Main_menu() {
           <Link to="/test">Test</Link>
         </button>
       </main>
-      <footer className="menu-footer">
+      {/* <footer className="menu-footer">
         <p>
           &#169; Made by <a href="https://jingfudong.com">Jingfu</a>
         </p>
-      </footer>
+      </footer> */}
     </div>
   );
 }

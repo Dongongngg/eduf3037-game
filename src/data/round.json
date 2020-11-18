@@ -3,6 +3,7 @@
     "id": "0",
     "title": "title of question 1",
     "question": "You are a 3rd year education student at the University of Sydney. One day, you are walking towards the Education Building, there is a shining portal that looks strange next to the main entrance. You cannot hold your educational curiosity so you decide to walk in and discover what that is. Entering in the strange portal, after a few seconds of scientific sound effects that we cannot add on because of copyright and budget, you stand in front of a door. The door was made with oak wood. The size of that door is not too big and not too small. There is a sign on that door: Do NOT open it. Then you decide to...",
+
     "choices": [
       {
         "name": "Push",
@@ -16,7 +17,7 @@
         "value": "",
         "des": "Leave that strange place and try to find a way out as you can smell the danger.",
         "img": "",
-        "next": "99"
+        "next": "X"
       }
     ]
   },
@@ -364,7 +365,7 @@
     ]
   },
   {
-    "id": "99",
+    "id": "X",
     "title": "title of question 99",
     "question": "you cannot find the way out. No matter how far you walk away, you always return to that oak door. You realise that the other side of the door is the only way to get out of this place.",
     "choices": [

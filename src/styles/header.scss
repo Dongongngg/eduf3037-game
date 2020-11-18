@@ -1,5 +1,7 @@
-@import "./variables.scss";
+@import './variables.scss';
 .test-header {
+  position: fixed;
+  top: 0;
   height: $height-header;
   display: flex;
   justify-content: center;

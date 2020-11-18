@@ -1,4 +1,12 @@
 //heights
-$height-header: 5vh;
-$height-bginfo: 50vh;
+$height-header: 0vh;
+$height-bginfo: 65vh;
 $height-selection: calc(100vh - #{$height-bginfo} - #{$height-header} - 6px);
+
+//colors
+$purple1: #ffede0;
+$purple2: #ffe5e0;
+$brown1: #b3a19d;
+$brown2: #b3a79d;
+$yellow: #fff5e0;
+$black: #2e384d;

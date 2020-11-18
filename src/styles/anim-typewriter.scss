@@ -1,6 +1,7 @@
+@import './variables.scss';
 /* Animation Typing */
 .anim-line {
-  border-right: 3px solid black;
+  border-right: 3px solid $black;
   text-align: center;
   white-space: nowrap;
   overflow: hidden;
@@ -15,12 +16,12 @@
     width: 0;
   }
   to {
-    width: 16.5em;
+    width: 13em;
   }
 }
 @keyframes blinkTextCursor {
   from {
-    border-right-color: black;
+    border-right-color: $black;
   }
   to {
     border-right-color: transparent;

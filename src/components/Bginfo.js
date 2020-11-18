@@ -6,9 +6,8 @@ import '../styles/bginfo.scss';
 export default function Bginfo({ data }) {
   return (
     <div className="bginfo-box">
-      <div className="bginfo-title"></div>
       <div className="bginfo-description ani-slide" id="description">
-        <h2>{data.question}</h2>
+        <p>{data.question}</p>
       </div>
     </div>
   );

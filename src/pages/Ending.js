@@ -8,7 +8,7 @@ export default function Ending(props) {
   return (
     <div>
       <div className="ending">
-        <h1>This is the end, {props.match.params.result}</h1>
+        <p>This is the end, {props.match.params.result}</p>
         <h3 className="try-again ">
           <Link to="/">Try Again?</Link>
         </h3>

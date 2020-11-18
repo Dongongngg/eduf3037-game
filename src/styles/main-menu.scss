@@ -1,4 +1,5 @@
-@import "./anim-typewriter";
+@import './anim-typewriter';
+@import './variables.scss';
 .main-menu {
   height: 100vh;
   display: flex;
@@ -35,31 +36,31 @@
       font-size: calc(12px + 1vw);
       padding: 0.35rem 1rem;
       width: 10rem;
-      transition: all 0.25s;
+      transition: all 0.15s;
       cursor: pointer;
       a {
-        font-family: "Courier New", Courier, monospace;
+        font-family: 'Courier New', Courier, monospace;
         font-weight: bold;
-        color: black;
+        color: $black;
       }
     }
     button:hover {
-      border: 3px solid black;
+      border: 3px solid $black;
     }
     button a {
       cursor: pointer;
       display: inline-block;
       position: relative;
-      transition: 0.5s;
+      transition: 0.15s;
     }
 
     button a:after {
-      content: "\00bb";
+      content: '\00bb';
       position: absolute;
       opacity: 0;
       top: 0;
       right: -1rem;
-      transition: 0.25s;
+      transition: 0.15s;
     }
 
     button:hover a {

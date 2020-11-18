@@ -1,12 +1,15 @@
+@import './variables.scss';
 .ending {
+  font-family: 'Architects Daughter', cursive;
   height: 100vh;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
-  h1 {
+  p {
     padding: 2rem;
     font-size: calc(1rem + 1vw);
+    color: $black;
   }
   .try-again {
     margin: 1rem;

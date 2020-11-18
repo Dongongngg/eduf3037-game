@@ -1,59 +1,76 @@
+@import './variables.scss';
+
 .selection-box {
   height: 100%;
   width: 100%;
-  background-color: rgb(189, 189, 189);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid black;
+  border: 1px solid $brown2;
+  background-color: $purple1;
+  &:hover {
+    .text {
+      opacity: 1;
+    }
+    .icon {
+      opacity: 0;
+    }
+  }
 
   .answer {
     padding: 1rem;
     cursor: pointer;
-    border: 2px solid #494949;
-    border-radius: 4px;
-    width: 10rem;
+    border: 2px solid $brown2;
+    border-radius: 1rem;
     height: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all 0.5s;
+    transition: all 0.15s;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     &:hover {
       transform: scale(1.1);
-      border: 2px solid black;
+      border: 2px solid $brown2;
     }
-    h1 {
-      font-size: calc(0.5rem + 0.8vw);
+    p {
+      font-size: calc(1rem + 0.5vw);
+      line-height: 1;
+      color: $black;
     }
   }
 
   .description {
     padding: 1rem;
     p {
-      font-size: calc(0.5rem + 0.8vw);
+      font-size: calc(0.75rem + 0.5vw);
+      line-height: 1.2;
+      color: $black;
     }
   }
 }
+
+.icon {
+  font-size: 10rem;
+  position: absolute;
+  transition: all 0.15s;
+  color: $brown1;
+}
+
 .text {
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  opacity: 0;
+  transition: all 0.15s;
 }
 @media screen and (max-width: 760px) {
   .selection-box {
     width: 100%;
     height: calc(50vh - 3px);
-    .title,
-    .description,
     .answer {
-      padding: 0.5rem;
-    }
-    .answer {
-      width: 5rem;
       height: 1.5rem;
       h1 {
         font-size: 1rem;
@@ -62,6 +79,7 @@
     .description {
       p {
         font-size: 1rem;
+        line-height: 1.5;
       }
     }
   }

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import PropsTypes from 'prop-types';
 //components
-import Header from '../components/Header';
+// import Header from '../components/Header';
 import Selections from '../components/Selections';
 import Bginfo from '../components/Bginfo';
 import Popup from '../components/Popup';
@@ -77,10 +77,18 @@ function Test(props) {
 
   return (
     <div className="test" id="top">
-      <header className="test-header">
+      {/* <header className="test-header">
         <Header answerList={answerList} id={questionId} />
-      </header>
-      <main className="test-bginfo">
+      </header> */}
+      <main
+        className="test-bginfo"
+        style={{
+          backgroundImage: `url(/img/${currentQuestion.id}.png)`,
+          backgroundSize: 'cover',
+          backgroundRepeat: 'no-repeat',
+          backgroundPosition: 'center center',
+        }}
+      >
         <Bginfo data={currentQuestion} />
       </main>
       <footer className="test-selection ani-slide">

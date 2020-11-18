@@ -1,3 +1,4 @@
+@import './variables.scss';
 .container {
   position: fixed;
   display: flex;
@@ -11,44 +12,48 @@
 .popup {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   top: 50%;
   left: 50%;
   height: 30vh;
   width: 30vw;
-  background-color: #eee;
-  border: 1px solid black;
+  background-color: $yellow;
+  color: $black;
+  border: 1px solid $brown1;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
+  border-radius: 1rem;
   & > h2 {
     font-size: calc(20px + 1vw);
   }
 }
+
 .title {
   text-align: center;
   padding: 1rem;
 }
+
 .button {
+  border-radius: 1rem;
   cursor: pointer;
-  border: 2px solid #494949;
-  border-radius: 4px;
+  border: 1px solid $brown1;
+  background-color: $purple1;
+  color: $black;
   width: 10rem;
   height: 3rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.2s;
+  transition: all 0.15s;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   & > h2 {
     font-size: calc(14px + 1vw);
-    font-family: "Courier New", Courier, monospace;
   }
   &:hover {
-    transform: scale(1.2);
-    border: 2px solid black;
+    transform: scale(1.05);
   }
 }
+
 @media screen and (max-width: 760px) {
   .popup {
     height: 30vh;

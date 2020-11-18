@@ -10,13 +10,13 @@ export default function Selections(props) {
       {data.choices ? (
         data.choices.map((choice, i) => (
           <div className="selection-box" key={i}>
-            <div className="img">{choice.img}</div>
+            <i className="fa fa-question-circle icon" aria-hidden="true"></i>
             <div className="text">
               <div className="description">
                 <p>{choice.des}</p>
               </div>
               <div className="answer" onClick={() => handleNextQuestion(choice.next, choice.value)}>
-                <h1>{choice.name}</h1>
+                <p>{choice.name}</p>
               </div>
             </div>
           </div>

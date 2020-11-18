@@ -1,9 +1,8 @@
-@import "./anim-typewriter.scss";
-@import "./variables.scss";
+@import './anim-typewriter.scss';
+@import './variables.scss';
 
 .test {
   height: 100%;
-  font-family: "Courier New", Courier, monospace;
 }
 
 .test-selection {
@@ -11,7 +10,7 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  border: 1px solid black;
+  border: 1px solid $brown1;
 }
 
 @media screen and (max-width: 760px) {
@@ -26,7 +25,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid black;
+  border: 1px solid $brown1;
 }
 
 @media screen and (max-width: 760px) {
