@@ -1,3 +1,17 @@
-{
-  "endings": [{ "A": "asdasd sad asd" }, { "B": "asda asd asd" }]
-}
+[
+  {
+    "id": "L",
+    "good": "You have demonstrated a sound understanding of your choice of creative teaching strategies and learning materials for teaching Chinese. There is some coherence between your learning goals and the learning experience in your language classroom. However, there is a lack of students’ motivation and innovative learning experience through the use of your teaching strategies and learning materials. You’d better enroll in the unit EDUF3037 Creativity, Learning and Teacher Artistry to gain a better understanding of teaching artistry as a 21st century language teacher.",
+    "bad": "You have demonstrated extensive evidence of choosing innovative teaching strategies and learning materials for teaching Chinese. There is well-structured coherence between your learning goals and the learning experience in your language classroom. Moreover, your consistent use of creative elements establishes students’ motivation with an innovative learning experience through the use of your teaching strategies and learning materials. You have successfully understood the dynamic of learning the unit EDUF3037 Creativity, Learning and Teacher Artistry which enables you to  gain a better understanding of teaching artistry as a 21st century language teacher."
+  },
+  {
+    "id": "T",
+    "good": "You have demonstrated a sound understanding of your choice of creative teaching strategies and learning materials for teaching TESOL. There is some coherence between your learning goals and the learning experience in your TESOL classroom. However, there is a lack of students’ motivation and innovative learning experience through the use of your teaching strategies and learning materials. You’d better enroll in the unit EDUF3037 Creativity, Learning and Teacher Artistry to gain a better understanding of teaching artistry as a 21st century TESOL teacher.",
+    "bad": "You have demonstrated extensive evidence of choosing innovative teaching strategies and learning materials for teaching TESOL. There is well-structured coherence between your learning goals and the learning experience in your TESOL classroom. Moreover, your consistent use of creative elements establishes students’ motivation with an innovative learning experience through the use of your teaching strategies and learning materials. You have successfully understood the dynamic of learning the unit EDUF3037 Creativity, Learning and Teacher Artistry which enables you to  gain a better understanding of teaching artistry as a 21st century TESOL teacher."
+  },
+  {
+    "id": "M",
+    "good": "You have demonstrated a sound understanding of your choice of creative teaching strategies and learning materials for teaching mathematics. There is some coherence between your learning goals and the learning experience in your mathematics classroom. However, there is a lack of students’ motivation and innovative learning experience through the use of your teaching strategies and learning materials. You’d better enroll in the unit EDUF3037 Creativity, Learning and Teacher Artistry to gain a better understanding of teaching artistry as a 21st century mathematics teacher.",
+    "bad": "You have demonstrated extensive evidence of choosing innovative teaching strategies and learning materials for teaching mathematics. There is well-structured coherence between your learning goals and the learning experience in your mathematics classroom. Moreover, your consistent use of creative elements establishes students’ motivation with an innovative learning experience through the use of your teaching strategies and learning materials. You have successfully understood the dynamic of learning the unit EDUF3037 Creativity, Learning and Teacher Artistry which enables you to  gain a better understanding of teaching artistry as a 21st century mathematics teacher."
+  }
+]

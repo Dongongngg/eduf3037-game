@@ -9,6 +9,7 @@ import Popup from '../components/Popup';
 import '../styles/test.scss';
 //data
 import data from '../data/round.json';
+import ending from '../data/ending.json';
 
 function Test(props) {
   //  id of questions
@@ -52,9 +53,21 @@ function Test(props) {
       }
     });
     if (cntA > cntB) {
-      return 'Good Ending';
+      return questionId.includes('L')
+        ? ending.find((e) => e.id === 'L').good
+        : questionId.includes('T')
+        ? ending.find((e) => e.id === 'T').good
+        : questionId.includes('M')
+        ? ending.find((e) => e.id === 'M').good
+        : null;
     } else {
-      return 'Bad Ending';
+      return questionId.includes('L')
+        ? ending.find((e) => e.id === 'L').bad
+        : questionId.includes('T')
+        ? ending.find((e) => e.id === 'T').bad
+        : questionId.includes('M')
+        ? ending.find((e) => e.id === 'M').bad
+        : null;
     }
   };
   const checkResult = () => {
