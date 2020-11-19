@@ -11,7 +11,7 @@ export default function Ending(props) {
     setTimeout(() => {
       setMsg(props.match.params.result);
     }, 1000);
-  }, [props.match.params.result]);
+  });
 
   return (
     <main className="ending">

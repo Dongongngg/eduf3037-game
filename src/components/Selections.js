@@ -10,7 +10,7 @@ export default function Selections(props) {
       {data.choices ? (
         data.choices.map((choice, i) => (
           <aside className="selection-box" key={i}>
-            <i className="fas fa-question-circle icon"></i>
+            <i className="fas fa-question-circle icon ani-rotate"></i>
             <div className="text">
               <div className="description">
                 <p>{choice.des}</p>

@@ -1,4 +1,4 @@
-@import './anim-typewriter.scss';
+@import './anim.scss';
 @import './variables.scss';
 
 .bginfo-description {
@@ -24,11 +24,7 @@
   font-size: calc(1rem + 0.75vw);
   line-height: 3rem;
   opacity: 0;
-  -webkit-transition: 0.25s ease-in-out;
-  -moz-transition: 0.25s ease-in-out;
-  -ms-transition: 0.25s ease-in-out;
-  -o-transition: 0.25s ease-in-out;
-  transition: 0.25s ease-in-out;
+  @include hover-transition;
   padding: 2rem;
   color: $black;
 }
@@ -37,11 +33,7 @@
   position: absolute;
   color: $brown1;
   z-index: 2;
-  -webkit-transition: 0.25s ease-in-out;
-  -moz-transition: 0.25s ease-in-out;
-  -ms-transition: 0.25s ease-in-out;
-  -o-transition: 0.25s ease-in-out;
-  transition: 0.25s ease-in-out;
+  @include hover-transition;
 }
 
 @media screen and (max-width: 760px) {
@@ -51,24 +43,5 @@
       padding: 1rem;
       line-height: 2rem;
     }
-  }
-}
-
-.ani-slide {
-  animation: 1s slide-right 1s forwards;
-  -moz-transform: translateX(-100%);
-  -webkit-transform: translateX(-100%);
-  -o-transform: translateX(-100%);
-  -ms-transform: translateX(-100%);
-  transform: translateX(-100%);
-}
-
-@keyframes slide-right {
-  to {
-    -moz-transform: translateX(0);
-    -webkit-transform: translateX(0);
-    -o-transform: translateX(0);
-    -ms-transform: translateX(0);
-    transform: translateX(0);
   }
 }

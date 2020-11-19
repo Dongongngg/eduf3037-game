@@ -22,15 +22,17 @@ function Test(props) {
   const scrollTo = (id) => {
     document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
   };
-  //handle each round and get answer from selection area
+  //handle each question round and get answer from selection area
   const handleNextQuestion = (next, answer) => {
     setQuestionId(next);
-    setAnswerList([...answerList, answer]);
+    if (questionId.includes('L') || questionId.includes('T') || questionId.includes('M')) {
+      setAnswerList([...answerList, answer]);
+    }
     scrollTo('top');
   };
 
   useEffect(() => {
-    if (answerList.length === 7) {
+    if (answerList.length === 5) {
       setEndingFlag(true);
     }
   }, [answerList]);
@@ -45,7 +47,7 @@ function Test(props) {
   const handleResult = (answer) => {
     let cntA = 0;
     let cntB = 0;
-    answer.splice(2).forEach((e) => {
+    answer.forEach((e) => {
       if (e === 'A') {
         cntA = cntA + 1;
       } else {

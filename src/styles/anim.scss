@@ -1,0 +1,131 @@
+@import './variables.scss';
+
+// hover opacity
+@mixin hover-transition($time: 0.25s) {
+  -webkit-transition: $time ease-in-out;
+  -moz-transition: $time ease-in-out;
+  -ms-transition: $time ease-in-out;
+  -o-transition: $time ease-in-out;
+  transition: $time ease-in-out;
+}
+//hover scale
+@mixin hover-scale($size: 1.1) {
+  -moz-transform: scale($size);
+  -webkit-transform: scale($size);
+  -o-transform: scale($size);
+  -ms-transform: scale($size);
+  transform: scale($size);
+}
+/* Animation Typing */
+.anim-line {
+  border-right: 3px solid $black;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  -moz-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.anim-typewriter {
+  animation: typewriter 3s steps(44) 1s 1 normal both,
+    blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 13em;
+  }
+}
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: $black;
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+//Animation Slide in
+.ani-slide {
+  animation: 1s slide-right forwards;
+  -moz-transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+  -o-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+
+@keyframes slide-right {
+  to {
+    -moz-transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -o-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+// animation of pointer up
+
+.ani-up {
+  animation: slide-up-down 1.5s 2 ease-in-out 1s both;
+}
+
+@keyframes slide-up-down {
+  0% {
+    -moz-transform: translateY(0%);
+    -webkit-transform: translateY(0%);
+    -o-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    transform: translateY(0%);
+  }
+
+  60% {
+    -moz-transform: translateY(-20%);
+    -webkit-transform: translateY(-20%);
+    -o-transform: translateY(-20%);
+    -ms-transform: translateY(-20%);
+    transform: translateY(-20%);
+  }
+  80% {
+    -moz-transform: translateY(-20%);
+    -webkit-transform: translateY(-20%);
+    -o-transform: translateY(-20%);
+    -ms-transform: translateY(-20%);
+    transform: translateY(-20%);
+  }
+
+  100% {
+    -moz-transform: translateY(0%);
+    -webkit-transform: translateY(0%);
+    -o-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    transform: translateY(0%);
+  }
+}
+
+// animation of quesiton marks
+.ani-rotate {
+  animation: rotate-icon 0.5s ease-in-out 1s both;
+}
+
+@keyframes rotate-icon {
+  0% {
+    -moz-transform: rotateY(0);
+    -webkit-transform: rotateY(0);
+    -o-transform: rotateY(0);
+    -ms-transform: rotateY(0);
+    transform: rotateY(0);
+  }
+  100% {
+    -moz-transform: rotateY(720deg);
+    -webkit-transform: rotateY(720deg);
+    -o-transform: rotateY(720deg);
+    -ms-transform: rotateY(720deg);
+    transform: rotateY(720deg);
+  }
+}

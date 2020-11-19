@@ -1,4 +1,5 @@
 @import './variables.scss';
+@import './anim.scss';
 .ending {
   font-family: 'Architects Daughter', cursive;
   min-height: 100vh;
@@ -26,11 +27,7 @@
   .end-icon {
     font-size: 1.5rem;
     padding: 0.5rem;
-    -webkit-transition: all 0.75s ease-in-out;
-    -moz-transition: all 0.75s ease-in-out;
-    -o-transition: all 0.75s ease-in-out;
-    -ms-transition: all 0.75s ease-in-out;
-    transition: all 0.75s ease-in-out;
+    @include hover-transition(0.75s);
     &:hover {
       -moz-transform: rotate(-360deg);
       -webkit-transform: rotate(-360deg);

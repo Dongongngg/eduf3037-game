@@ -7,7 +7,7 @@ export default function Bginfo({ data }) {
   return (
     <div className="bginfo-box">
       <div className="bginfo-description ani-slide" id="description">
-        <i className="far fas fa-hand-pointer bg-icon"></i>
+        <i className="far fas fa-hand-pointer bg-icon ani-up"></i>
         <p className="bg-text">{data.question}</p>
       </div>
     </div>
