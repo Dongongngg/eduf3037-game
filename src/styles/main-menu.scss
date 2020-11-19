@@ -9,11 +9,7 @@
   color: $black;
   background-color: $purple1;
   .menu-title {
-    margin: 1rem;
-    padding: 1rem;
-    h1 {
-      font-size: calc(16px + 1vw);
-    }
+    font-size: calc(1rem + 1vw);
   }
   .menu-footer {
     position: absolute;
@@ -53,6 +49,9 @@
             right: 0;
           }
         }
+      }
+      &:focus {
+        outline: 0;
       }
       a {
         font-family: 'Ubuntu', sans-serif;

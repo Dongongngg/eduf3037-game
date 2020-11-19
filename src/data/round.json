@@ -55,14 +55,14 @@
     "question": "You suddenly feel dizzy and then lose consciousness. After a while, you wake up and realise that you have been a secondary school teacher at Mysterious High School which is a mysterious high school somewhere in NSW.  There are 15 students in your class, and you notice that they are learning Chinese, which means you are a Chinese language teacher now. Before you can completely adopt this setting, one of the students wants to challenge you. This student is Ashley, who makes a paper ball and  begins to play with it intently. Even though you are not familiar with the class right now, as a teacher you believe you have the responsibility to manage this behaviour. What are you going to do?",
     "choices": [
       {
-        "name": "warn",
+        "name": "Warning",
         "value": "A",
         "des": "Confiscate the paper ball and warn Ashley that it is a disturbing behaviour now. But if Ashley ignores your instruction, this will be considered as rude behaviour, and Ashley has to go to the staff room and explain this behaviour to the head teacher immediately.",
         "img": "",
         "next": "L-2"
       },
       {
-        "name": "performance",
+        "name": "Performance",
         "value": "B",
         "des": "Ask the student to come to the front with the paper ball, and use the paper ball to act a new word on the white board. Other students have to guess the word according to that action Ashley made. After this performance you will ask Ashley to put the paper ball to the bin and say that it is not the right time to play with the paper ball, and you do not want to see the paper ball again in this classroom. You want all students to be concentrated and follow your instruction. If everyone behaves well, we may have a chance to do this guess the action activity again.",
         "img": "",
@@ -76,14 +76,14 @@
     "question": "After you finish dealing with the challenging behaviour issue, you move on to the next activity. You are going to explain the new Chinese sentence structure. When you compare the Chinese sentence structure with the English sentence structure, you notice that most of the students feel a bit confused, and you are losing their attention. What are you going to do?",
     "choices": [
       {
-        "name": "Yes",
+        "name": "Discuss",
         "value": "A",
         "des": "Ask students to write down both sentence structures in their notebook, and discuss the differences between Chinese and English sentence structure in groups for 5 minutes. After they have discussed and shared the differences they find out, you will explain the differences in structure to help them understand the Chinese sentence structure better.",
         "img": "",
         "next": "L-3"
       },
       {
-        "name": "No",
+        "name": "Silent",
         "value": "B",
         "des": "Have a silent moment for a few seconds to give students some time to think about the concept by themselves first. Then they will be divided into groups of 3-4 and each of the students will be given a role as part of the sentence. They will be asked to find their position in a Chinese and English sentence respectively and act in different ways to different sentences.",
         "img": "",
@@ -97,14 +97,14 @@
     "question": "After this lesson, you decide to adopt some drama teaching strategies into your Chinese language classroom. The topic of this lesson is “family”, you think it would be a great idea to…",
     "choices": [
       {
-        "name": "Yes",
+        "name": "Dialogue",
         "value": "A",
         "des": "Have a dialogue practice activity with students. You divide students into pairs. By providing some dialogues about describing their family members on a worksheet, students are required to rewrite the sentences based on their own situation, and practice speaking with their partner then. You will go around the classroom to see how they go and give advice on their pronunciation.",
         "img": "",
         "next": "L-4"
       },
       {
-        "name": "No",
+        "name": "Role play",
         "value": "B",
         "des": "Have a role play activity with students. You divide students into different groups. Instead of having each group with the same size of students, the number of students in those groups are uneven. Students have to react to their group size to make a consideration of which type of family that can be and plan for their role play under that setting. For beginner students, they will be provided with some useful sentences to use in their role play. For continuer students, they will have to construct some culture related content into their role play. This activity may take three to four lessons for students to develop and they will perform their role play during the last lesson in class.",
         "img": "",
@@ -118,14 +118,14 @@
     "question": "It is not a good idea to learn a language with words only. You want to include some visual contents into your teaching. There are two ways of doing so that jump into your mind, which of the following lessons would you like to choose?",
     "choices": [
       {
-        "name": "choose",
+        "name": "Choose",
         "value": "A",
         "des": "Students will be given some images to analyse. There will be some questions related to each of those images on a worksheet. The order of those images are fixed. After analysing the images and responding to the questions, students are required to write a short story based on that series of images.",
         "img": "",
         "next": "L-5"
       },
       {
-        "name": "choose",
+        "name": "Choose",
         "value": "B",
         "des": "Giving students some images that can be ordered according to their own taste. Students are required to put the image into different orders and tell a story of how they understand the images and write that in Chinese. At the end of that lesson, students will present their stories to the class.",
         "img": "",
@@ -160,14 +160,14 @@
     "question": "A strong light suddenly slashes your eyes, after your sight has recovered you find that you are standing at the front of a classroom, and there are 15 students from different cultural backgrounds in there. You realize that you are a TESOL teacher now. Suddenly, a student named Taylor starts singing and dancing in the classroom without any permission. What are you going to do?",
     "choices": [
       {
-        "name": "get out",
+        "name": "Get out",
         "value": "A",
         "des": "Ask Taylor to get out of the classroom, because that behaviour breaks the classroom rule. Taylor needs to apologize before entering the classroom again",
         "img": "",
         "next": "T-2"
       },
       {
-        "name": "sit down",
+        "name": "Sit down",
         "value": "B",
         "des": "Ask Taylor to sit down and tell Taylor that is a good performance, but it is not acceptable to perform without teacher’s permission due to our classroom rule. But we will have a dramatic activity later which means everyone gets the chance to perform during that activity.",
         "img": "",
@@ -181,14 +181,14 @@
     "question": "After you finish dealing with the challenging  behaviour issue, you keep on teaching. When you are teaching the concept of chronology, you notice that most of the students feel a bit confused, and you are losing their attention. What are you going to do?",
     "choices": [
       {
-        "name": "repeat",
+        "name": "Repeat",
         "value": "A",
         "des": "You will keep talking about that concept, repeat again and again. And you will provide further explanation with some more examples to your students to support their understanding of that new concept.",
         "img": "",
         "next": "T-3"
       },
       {
-        "name": "silence",
+        "name": "Silent",
         "value": "B",
         "des": "Have a silent moment for a few seconds to give students some time to think about the sentence stress. The activity will go for three turns. In the first turn, students will have to clap their hands whenever they hear the word about time in those sentences. Then, these sentences will be repeated by the teacher. This time, students should clap their hands when they hear the time and the subject in those sentences. Finally, they clap their hands when there is a subject, time word or action in those sentences. Through this building up process, students will have a deeper understanding of how to distinguish the differences between those sentence constituents.",
         "img": "",
@@ -202,14 +202,14 @@
     "question": "You decide to apply drama teaching strategies to your lesson to help students practise their language skills. Which of the following strategies would you like to apply?",
     "choices": [
       {
-        "name": "dialogue",
+        "name": "Dialogue",
         "value": "A",
         "des": "You will prepare some dialogue scripts for your students. The dialogues on the scripts have already been differentiated into different difficulty levels. They have to work in groups to practise their speaking. They will perform their dialogues in class at the end of this lesson.",
         "img": "",
         "next": "T-4"
       },
       {
-        "name": "scenario",
+        "name": "Scenario",
         "value": "B",
         "des": "You will provide some scenarios that relate to the topic. Students are required to work in groups to construct a script based on the selected scenario. Students should decide their character in the scenario and design their own script by using the sentence structure we have learnt so far. They will practise their performance with script in their group. At the end of this lesson, each group will perform to the class without their scripts.",
         "img": "",
@@ -223,14 +223,14 @@
     "question": "The topic of your next lesson is past tense verbs. There are two ways to teach this topic that jump into your mind, which of the following would you like to choose?",
     "choices": [
       {
-        "name": "list",
+        "name": "List",
         "value": "A",
         "des": "First of all, you will hand out a word list with some verbs and their past tense to your students. After everyone has practised the pronunciation of the words together, you will ask them to play a memory game to memorise the verbs with their past tense. At the end of the lesson, you will provide a short passage with some past tense verbs in it. Students are required to highlight these words and respond to some questions related to that passage together.",
         "img": "",
         "next": "T-5"
       },
       {
-        "name": "pictures",
+        "name": "Pictures",
         "value": "B",
         "des": "You will put a series of pictures of an interesting story on the whiteboard, students will discuss in pairs to find out the correct sequence of this story. Each picture on the whiteboard represents a verb. After they get the meaning of those verbs and put the picture into the correct order, you will then introduce the verbs and their past tense with the pictures. Students have to copy down the new words into their notebook. After everyone has practised the pronunciation of the words together, you will act the verbs and ask them to raise up their hands and guess the word. At the end of this lesson, students are required to use those words to construct 2-3 simple sentences.",
         "img": "",
@@ -244,14 +244,14 @@
     "question": "By fulfilling all the requirements, you gain the permission to hold an ESL excursion for your class to help the students learn the topic “simple past tense”. Students are required to do a summative assignment with the excursion as part of it. What will you plan to do?",
     "choices": [
       {
-        "name": "movie",
+        "name": "Movie",
         "value": "A",
         "des": "You will lead your students to watch an on-showing movie at Event Cinema. After they return to school, they need to use simple past tense to write a short recount about the movie they watched.",
         "img": "",
         "next": "T-5"
       },
       {
-        "name": "university",
+        "name": "University",
         "value": "B",
         "des": "You will lead your students to visit your university. During your visit,  you will introduce different faculties and the history of the university to your students. You will also share your learning experience with them to give them an overview of territory study. Students are encouraged to take some pictures during the excursion. After they return to school, the students are required to use wix to create a web page of a University faculty which you have introduced during the excursion. They need to use simple past tense to demonstrate what they saw and learnt during the excursion.",
         "img": "",
@@ -265,14 +265,14 @@
     "question": "A strong light suddenly slashes your eyes, after your sight has recovered you find that you are standing in front of a classroom, and there are 30 students with their mathematics textbook on the desk in that classroom. You realize that you are a mathematics teacher now. You are writing some quick questions for students to solve on the whiteboard. Suddenly, you hear someone at the back of the classroom start singing songs loudly. You recognise that voice is from Sam. Then you...",
     "choices": [
       {
-        "name": "stop",
+        "name": "Stop",
         "value": "A",
         "des": "Ask Sam to shut up and stop singing. Give Sam a warning for misbehaviour in the classroom. “Be quiet and do your work! Otherwise, I’ll  send you to the staff room and you have to explain this behaviour with the head teacher immediately!”",
         "img": "",
         "next": "M-2"
       },
       {
-        "name": "opportunity",
+        "name": "Opportunity",
         "value": "B",
         "des": "Give Sam a compliment for showing this artistic characteristic.  Politely, ask Sam to stop singing it so that the rest of the students will not be disrupted. Also, give Sam an opportunity to collaborate with you to think of some songs about mathematics and perform it to the class next time.",
         "img": "",
@@ -286,14 +286,14 @@
     "question": "After you introduce the students to a new maths concept. This is a total new topic for the students to learn after their last exam. You finish the demonstration with an example, but students are still confused when you ask them questions about this concept. Then you…",
     "choices": [
       {
-        "name": "continue",
+        "name": "Continue",
         "value": "A",
         "des": "Try to continue by providing another similar example and keep asking questions about it until the student can answer one of the questions. Then move on so that you will finish everything you planned for this lesson.",
         "img": "",
         "next": "M-3"
       },
       {
-        "name": "think",
+        "name": "Think",
         "value": "B",
         "des": "Give students some time to think about the question by themselves. Allow students to post questions to you anonymously using devices. Think about another way to scaffold their understanding. You will give them some matchsticks for the activity. They have to use those matchsticks to build up different geometric shapes we have learnt so far and find out their side length by counting the number of matchsticks. ",
         "img": "",
@@ -307,14 +307,14 @@
     "question": "You looked at the drama classroom next to you, seeing students’ happy faces and can feel that magic dynamic. You decide to adopt some drama teaching strategies into your mathematics classroom. Then you...",
     "choices": [
       {
-        "name": "scenarios",
+        "name": "Scenarios",
         "value": "A",
         "des": "Give them some scenarios in the question. Students work on the questions and solve them individually.",
         "img": "",
         "next": "M-4"
       },
       {
-        "name": "topics",
+        "name": "Topics",
         "value": "B",
         "des": "By giving the three topics “food”, “colour” and “music”, they have to write a profile for a persona by themselves including descriptions of these topics. In the next lesson, they have to answer the questions related to the topic “Venn diagram” by acting as that persona of their own instead of themselves. Students are encouraged to be creative.",
         "img": "",
@@ -328,14 +328,14 @@
     "question": "The topic of your next lesson is rule for patterns. There are two ways to teach this topic jumping into your mind, which of the following lessons would you like to choose?",
     "choices": [
       {
-        "name": "matchsticks",
+        "name": "Matchsticks",
         "value": "A",
         "des": "You draw some triangles on the white boards. By asking students how many matchsticks they would need to make one triangle, two triangles and three triangles with the side length as one matchstick, you try to make students realise the difference between the numbers and find out the rule of the number patterns.",
         "img": "",
         "next": "M-5"
       },
       {
-        "name": "pattern",
+        "name": "Pattern",
         "value": "B",
         "des": "Before leading students to the numerical world, you want them to gain the idea of “pattern” by looking at tessellations. Recognise the pattern of shapes in the tessellations, students will draw a tessellation by their own. By comparing the number of shapes in one tessellation, two tessellations and three tessellations, they will then be introduced to the numerical patterns and therefore find out a rule for those numbers.",
         "img": "",

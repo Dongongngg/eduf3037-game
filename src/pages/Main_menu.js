@@ -9,20 +9,19 @@ export default function Main_menu() {
   }, 4000);
 
   return (
-    <div className="main-menu">
-      <header className="menu-title">
-        <h1 className="anim-typewriter anim-line">Are you a creative teacher?</h1>
-      </header>
-      <main className="menu-btn" id="menu-btn">
+    <main className="main-menu">
+      <h1 className="anim-typewriter anim-line menu-title">Are you a creative teacher?</h1>
+
+      <div className="menu-btn" id="menu-btn">
         <button>
           <Link to="/test">Test</Link>
         </button>
-      </main>
+      </div>
       {/* <footer className="menu-footer">
         <p>
           &#169; Made by <a href="https://jingfudong.com">Jingfu</a>
         </p>
       </footer> */}
-    </div>
+    </main>
   );
 }

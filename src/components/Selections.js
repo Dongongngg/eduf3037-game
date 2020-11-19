@@ -9,7 +9,7 @@ export default function Selections(props) {
     <>
       {data.choices ? (
         data.choices.map((choice, i) => (
-          <div className="selection-box" key={i}>
+          <aside className="selection-box" key={i}>
             <i className="fas fa-question-circle icon"></i>
             <div className="text">
               <div className="description">
@@ -22,7 +22,7 @@ export default function Selections(props) {
                 <p>{choice.name}</p>
               </button>
             </div>
-          </div>
+          </aside>
         ))
       ) : (
         <h1>loading...</h1>

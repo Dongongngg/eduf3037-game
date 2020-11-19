@@ -4,27 +4,44 @@
 .bginfo-description {
   margin: 2rem;
   min-height: 33vh;
-  p {
-    font-size: calc(1rem + 0.75vw);
-    line-height: 3rem;
-    opacity: 0;
-    -webkit-transition: 0.25s ease-in-out;
-    -moz-transition: 0.25s ease-in-out;
-    -ms-transition: 0.25s ease-in-out;
-    -o-transition: 0.25s ease-in-out;
-    transition: 0.25s ease-in-out;
-    padding: 2rem;
-    color: $black;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
   &:hover {
-    p {
+    .bg-text {
       opacity: 1;
       background: $yellow;
       -webkit-box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.2);
       box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.2);
       border-radius: 1rem;
     }
+    .bg-icon {
+      opacity: 0;
+    }
   }
+}
+.bg-text {
+  font-size: calc(1rem + 0.75vw);
+  line-height: 3rem;
+  opacity: 0;
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -ms-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+  padding: 2rem;
+  color: $black;
+}
+.bg-icon {
+  font-size: 10rem;
+  position: absolute;
+  color: $brown1;
+  z-index: 2;
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -ms-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
 }
 
 @media screen and (max-width: 760px) {

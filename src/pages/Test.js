@@ -76,11 +76,11 @@ function Test(props) {
   };
 
   return (
-    <div className="test" id="top">
+    <main className="test" id="top">
       {/* <header className="test-header">
         <Header answerList={answerList} id={questionId} />
       </header> */}
-      <main
+      <section
         className="test-bginfo"
         style={{
           backgroundImage: `url(/img/${currentQuestion.id || '0'}.png)`,
@@ -90,12 +90,12 @@ function Test(props) {
         }}
       >
         <Bginfo data={currentQuestion} />
-      </main>
-      <footer className="test-selection ani-slide">
+      </section>
+      <section className="test-selection ani-slide">
         <Selections data={currentQuestion} handleNextQuestion={handleNextQuestion} />
-      </footer>
+      </section>
       <Popup show={endingFlag} checkResult={checkResult} />
-    </div>
+    </main>
   );
 }
 Test.propTypes = {

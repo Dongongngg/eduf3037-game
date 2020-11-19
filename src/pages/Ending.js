@@ -10,19 +10,17 @@ export default function Ending(props) {
   useEffect(() => {
     setTimeout(() => {
       setMsg(props.match.params.result);
-    }, 2000);
+    }, 1000);
   }, [props.match.params.result]);
 
   return (
-    <div>
-      <div className="ending">
-        <p>{msg}</p>
-        <h3 className="try-again">
-          <i className="fas fa-undo-alt end-icon"></i>
-          <Link to="/">Try Again?</Link>
-        </h3>
+    <main className="ending">
+      <p>{msg}</p>
+      <div className="try-again">
+        <i className="fas fa-undo-alt end-icon"></i>
+        <Link to="/">Try Again?</Link>
       </div>
-    </div>
+    </main>
   );
 }
 Ending.propTypes = {
